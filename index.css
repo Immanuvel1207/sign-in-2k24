@@ -135,7 +135,7 @@ h2 {
 }
 @media (max-width: 800px) {
     .res {
-        font-size: 25px; /* Ensure image fits small screens */
+        font-size: 5px; /* Ensure image fits small screens */
     }
     .resimg1{
         width: 50px !important;
