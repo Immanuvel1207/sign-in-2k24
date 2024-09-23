@@ -69,36 +69,6 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
-
-.text-overlay {
-    position: absolute;
-    top: 50%; /* Adjust according to the text position */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    font-size: 20px; /* Adjust size as per your need */
-    font-weight: bold;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    
-    gap: 20px;
-}
-nav ul li {
-    display: inline;
-}
-nav ul li a {
-    text-decoration: none;
-    color: #020202;
-    font-size: 18px;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-    border-radius: 8px;
-}
  
 .content {
     max-width: 900px;
@@ -135,7 +105,7 @@ h2 {
 }
 @media (max-width: 800px) {
     .res {
-        font-size: 5px; /* Ensure image fits small screens */
+        font-size: 25px; /* Ensure image fits small screens */
     }
     .resimg1{
         width: 50px !important;
@@ -217,10 +187,6 @@ font-size: 20px;
 margin-top: 20px;
 }
 
-
-
-
-
 /* Title */
 #modal-title {
 color: #000;
@@ -244,31 +210,11 @@ margin-bottom: 15px;
 font-size: 16px;
 margin-bottom: 15px;
 line-height: 1.5;
+text-align: justify;
 }
 
 /* Participants */
 #modal-participants {
-font-size: 16px;
-color: #333;
-margin-bottom: 15px;
-}
-
-/* Prizes list */
-#modal-prizes {
-font-size: 16px;
-margin-bottom: 15px;
-list-style: decimal;
-padding-left: 20px;
-}
-
-#modal-rounds {
-    font-size: 16px;
-    margin-bottom: 15px;
-    list-style: decimal;
-    padding-left: 20px;
-    }
-/* Location */
-#modal-location {
 font-size: 16px;
 color: #333;
 margin-bottom: 15px;
@@ -468,14 +414,6 @@ width: 50px;
 font-size: 20px;
 }
 
-nav ul {
-flex-direction: column;
-}
-
-nav ul li a {
-font-size: 16px;
-padding: 8px 16px;
-}
 
 .event-card {
 padding: 10px;
@@ -497,13 +435,11 @@ font-size: 18px;
 font-size: 22px;
 }
 
-#modal-description,
-#modal-participants,
-#modal-location {
+#modal-description {
 font-size: 14px;
 }
 
-#modal-prizes,
+
 #modal-contact {
 font-size: 14px;
 }
@@ -522,16 +458,6 @@ width: 80px;
 .logo h1 {
 font-size: 25px;
 }
-
-nav ul {
-gap: 10px;
-}
-
-nav ul li a {
-font-size: 14px;
-padding: 6px 12px;
-}
-
 .event-card {
 padding: 40px;
 }
@@ -552,13 +478,10 @@ font-size: 16px;
 font-size: 20px;
 }
 
-#modal-description,
-#modal-participants,
-#modal-location {
+#modal-description {
 font-size: 12px;
 }
 
-#modal-prizes,
 #modal-contact {
 font-size: 12px;
 }
@@ -568,123 +491,7 @@ font-size: 12px;
 padding: 10px 20px;
 }
 }
-/* Basic Styles for Desktop */
-nav ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-display: flex;
-gap: 20px;
-}
 
-nav ul li {
-display: inline;
-}
-
-nav ul li a {
-text-decoration: none;
-color: #020202;
-font-size: 18px;
-padding: 10px 20px;
-transition: background-color 0.3s ease;
-border-radius: 8px;
-}
-
-
-
-/* Hamburger Menu Styles */
-.hamburger {
-display: none;
-flex-direction: column;
-cursor: pointer;
-z-index: 10;
-}
-
-.hamburger span {
-height: 3px;
-width: 30px;
-background-color: #333;
-margin: 5px;
-transition: 0.3s;
-}
-
-/* Fullscreen Overlay Menu */
-.overlay-menu {
-display: none;
-position: fixed;
-top: 0;
-left: 0;
-height: 100%;
-width: 100%;
-background-color: rgba(0, 0, 0, 0.9);
-z-index: 9;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-opacity: 0;
-transition: opacity 0.5s ease;
-}
-
-.overlay-menu ul {
-list-style: none;
-text-align: center;
-}
-
-.overlay-menu ul li {
-/* margin: 20px 0; */
-}
-
-.overlay-menu ul li a {
-color: #fff;
-font-size: 24px;
-text-decoration: none;
-transition: color 0.3s ease;
-}
-
-.overlay-menu ul li a:hover {
-color: #f7f7f7;
-}
-
-/* Show overlay when active */
-.overlay-menu.active {
-display: flex;
-opacity: 1;
-}
-
-/* Responsive Styles for Mobile */
-@media (max-width: 768px) {
-nav ul {
-display: none; /* Hide default nav links */
-}
-
-.hamburger {
-display: flex; /* Show hamburger menu */
-}
-
-/* Hamburger menu transition when active */
-.hamburger.active span:nth-child(1) {
-transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.hamburger.active span:nth-child(2) {
-opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-transform: rotate(45deg) translate(-5px, -6px);
-}
-}
-
-
-/* General styling for ul */
-.ul {
-background-color: transparent;
-list-style: none;
-padding: 0;
-margin: 0;
-display: flex;
-gap: 20px;
-}
 
 /* Styling for button */
 .button {
@@ -745,74 +552,9 @@ border-radius: 3px;
 background-color: rgb(255, 38, 0);
 }
 
-/* Hamburger menu styling */
-.hamburger {
-display: none;
-flex-direction: column;
-cursor: pointer;
-}
-
-/* Hamburger menu bars */
-.hamburger span {
-display: block;
-width: 25px;
-height: 3px;
-background: white;
-margin: 4px 0;
-transition: 0.3s;
-}
-
-/* Overlay menu */
-.overlay-menu {
-display: none;
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: rgba(0, 0, 0, 0.8);
-z-index: 999;
-overflow: hidden;
-justify-content:     center;
-align-items: center;
-}
-
-/* Show overlay menu when active */
-.overlay-menu.active {
-display: flex;
-}
-
-/* Overlay menu links */
-.overlay-menu .ul {
-flex-direction: column;
-gap: 20px;
-}
-
-
-.close-btn {
-position: absolute;
-top: 20px;
-right: 20px;
-font-size: 24px;
-color: white;
-cursor: pointer;
-z-index: 1000;
-}
 
 /* Show hamburger menu and hide navigation links on small screens */
 @media (max-width: 768px) {
-.nav-links {
-display: none;
-}
-
-.hamburger {
-display: flex;
-}
-
-.overlay-menu .ul {
-display: flex;
-}
-}
 
 
 /* Styling for button in header */
@@ -875,4 +617,5 @@ display: flex;
 .button.alternate-font {
     font-family: "Kalnia Glaze", serif; /* Use this for an alternate style */
     font-weight: 100; /* Adjust weight as needed */
+}
 }
